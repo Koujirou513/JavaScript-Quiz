@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    background-image: url('/images/background.png')
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero_box {
+    display: flex;
+    flex: 3;
+    background-color: black;
+    flex-direction: column
+}
+
+.question_box {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.quiz_app_logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 200px;
+}
+
+.question_number {
+    color: white;
+    font-size: 20px;
+}
+.question_text {
+    color: white;
+    text-align: center;
+}
+
+.answer_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: white;
+    grid-template-rows: 100px;
+    color: orangered;
+}
+
+.select_number {
+    margin-left: 5px;
+}
+.select_text {
+    text-align: center;
+}
+.select_box:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color: white;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    background-color: lightblue;
+    flex-direction: column;
+}
+
+.sidebar > div {
+}
+
+.sidebar_score {
+    padding: 8px 16px;
+}
+
+.sidebar_time {
+    margin-top: auto;
+    text-align: center;
+}
+
+.sidebar_msg {
+    text-align: center;
+    font-size: 40px;
+    margin-top: auto;
+}
+
+#stopwatch {
+    font-size: 40px;
+    padding: 30px;
+}

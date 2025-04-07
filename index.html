@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App - Home</title>
+	<link rel="stylesheet" href="css/home-style.css">
+</head>
+<body>
+	<div class="home-container">
+		<div class="home-content">
+			<h1>JavaScript Quiz</h1>
+			<img class="quiz_app_logo" src="/images/quiz-app-logo.png">
+			
+			<div class="settings">
+				<div class="setting-item">
+					<label for="question-count">問題数を選択:</label>
+					<select id="question-count">
+						<option value="5">5問</option>
+						<option value="8" selected>8問</option>
+						<option value="10" >10問</option>
+						<option value="15">15問</option>
+						<option value="20">20問</option>
+					</select>
+				</div>
+				
+				<div class="setting-item">
+					<label>
+						<input type="checkbox" id="shuffle-answers" checked>
+						選択肢をランダムに表示
+					</label>
+				</div>
+                <div class="setting-item">
+					<label for="language-select">問題文の言語:</label>
+					<select id="language-select">
+						<option value="en" selected>English</option>
+						<option value="ja">日本語</option>
+					</select>
+				</div>
+			</div>
+			
+			<button id="start-button">クイズをスタート</button>
+		</div>
+	</div>
+	
+	<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz-app</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<main class="hero_box">
+			<!-- Question-box -->
+			<div class="question_box">
+				<img class="quiz_app_logo" src="./images/quiz-app-logo.png">
+				<p class="question_number"></p>
+				<h2 class="question_text">
+					Sample Question Here
+				</h2>
+			</div>
+
+			<!-- answer-box -->
+			<div class="answer_box">
+				<div class="answer_container">
+					<!-- select -->
+				</div>
+			</div>
+		</main>
+
+		<aside class="sidebar">
+			
+			<div class="sidebar_result">
+				<div class="sidebar_total-time">
+				</div>
+				<div class="sidebar_score">
+				</div>
+			</div>
+			<div class="sidebar_msg">Ready?</div>
+			<div class="sidebar_time">
+				<div id="stopwatch">
+					00:00
+				</div>
+			</div>
+		</aside>
+	</div>
+	<script src="js/timer.js"></script>
+	<script src="js/question.js"></script>
+</body>
+</html>
