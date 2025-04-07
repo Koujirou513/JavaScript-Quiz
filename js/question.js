@@ -141,6 +141,7 @@ function setChoices(choices, answer) {
                 this.style.backgroundColor = "gray";
                 this.style.cursor = "not-allowed";
                 this.classList.add("clicked");
+                questionAttempted = true;
 
                 // スコアを減点する（ここでは、計測時間を加算することにする）
                 // popSidebarMsg("Miss +10 sec", 500);
